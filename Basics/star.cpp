@@ -50,10 +50,10 @@ class data{
                 }
             }
         }
-        void ins(int, int);
-        int search(int);
-        void update(int, int);
-        void del(int );
+        void ins(int, int); // to insert
+        int search(int); //to search
+        void update(int, int);// to update
+        void del(int );// to delete
 
 };
 void data::del(int e){
