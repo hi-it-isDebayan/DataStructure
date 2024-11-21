@@ -24,7 +24,8 @@ class Stack{
                 cout << "Your choice...";
                 cin >> choice;
                 switch(choice){
-                    case 0: --flag;break;
+                    case 0: cout  << "\nExit was Initiated.\n";
+                            exit(0);
                     case 1: cout<< "pushing element..."; int x;cin >> x; push(x); break;
                     case 2: if(isEmpty()==true){cout << "no element found...\n";break;}cout << "removing element " << peek() << "...\nElement "<<peek() << " removed.\n";pop();break;
                     case 3: cout << "Stack Contains\n";if(isEmpty()==true){cout <<"0 elements.\n";break;}for(int i=top; i>=0; i--){cout << arr[i]<< endl;} break;
